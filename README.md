@@ -1,5 +1,5 @@
-# <a href="google.com">Nabver</a>
-![A picture of a cat](src/assets/navber.png)
+# <a href="src/Components/Navbar/Navbar.jsx">Nabver</a>
+<a href="src/Components/Navbar/Navbar.jsx">![A picture of a cat](src/assets/navber.png)</a>
 # Footer
 ![A picture of a cat](src/assets/footer.png)
 # awsome-projects
