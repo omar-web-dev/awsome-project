@@ -4,6 +4,6 @@
 <a href="src/pages/Footer/Footer.jsx">![A picture of a cat](src/assets/footer.png)</a>
 # <a href="src/pages/TowColumns.jsx">Tow Colum</a>
 <a href="src/pages/TowColumns.jsx">![A picture of a cat](src/assets/tow-colums.png)</a>
-# <a href="src/pages/SimleSlider">Simle Slider</a>
-<a href="src/pages/SimleSlider">![A picture of a cat](src/assets/simle-slider.png)</a>
+# <a href="src/pages/SimleSlider/SimpleSlider.jsx">Simle Slider</a>
+<a href="src/pages/SimpleSlider/SimpleSlider.jsx">![A picture of a cat](src/assets/simle-slider.png)</a>
 
