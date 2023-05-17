@@ -51,6 +51,14 @@ function DesktopMenu() {
         <li className="relative">
           <Link
             className="flex items-center uppercase text-[15px] font-Inter font-bold"
+            to={"/my-chart"}
+          >
+            Chart
+          </Link>
+        </li>
+        <li className="relative">
+          <Link
+            className="flex items-center uppercase text-[15px] font-Inter font-bold"
             to={"/contact"}
           >
             Contact
