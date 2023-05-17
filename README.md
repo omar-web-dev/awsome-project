@@ -6,5 +6,5 @@
 <a href="src/pages/TowColumns.jsx">![A picture of a cat](src/assets/tow-colums.png)</a>
 # <a href="src/pages/SimpleSlider/">Simle Slider</a>
 <a href="src/pages/SimpleSlider/">![A picture of a cat](src/assets/simle-slider.png)</a>
-# <a href="src/pages/MyChart/">My Slider</a>
+# <a href="src/pages/MyChart/">My Chart</a>
 <a href="src/pages/SimpleSliderMyChart/">![A picture of a cat](src/assets/chart.png)</a>
