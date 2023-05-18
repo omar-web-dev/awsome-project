@@ -6,178 +6,15 @@ const ChartComponent = () => {
 
   useEffect(() => {
     const chartData = {
-      series: [
-        {
-          name: "north",
-          data: [
-            {
-              x: 1996,
-              y: 322,
-            },
-            {
-              x: 1997,
-              y: 324,
-            },
-            {
-              x: 1998,
-              y: 329,
-            },
-            {
-              x: 1999,
-              y: 342,
-            },
-            {
-              x: 2000,
-              y: 348,
-            },
-            {
-              x: 2001,
-              y: 334,
-            },
-            {
-              x: 2002,
-              y: 325,
-            },
-            {
-              x: 2003,
-              y: 316,
-            },
-            {
-              x: 2004,
-              y: 318,
-            },
-            {
-              x: 2005,
-              y: 330,
-            },
-            {
-              x: 2006,
-              y: 355,
-            },
-            {
-              x: 2007,
-              y: 366,
-            },
-            {
-              x: 2008,
-              y: 337,
-            },
-            {
-              x: 2009,
-              y: 352,
-            },
-            {
-              x: 2010,
-              y: 377,
-            },
-            {
-              x: 2011,
-              y: 383,
-            },
-            {
-              x: 2012,
-              y: 344,
-            },
-            {
-              x: 2013,
-              y: 366,
-            },
-            {
-              x: 2014,
-              y: 389,
-            },
-            {
-              x: 2015,
-              y: 334,
-            },
-          ],
-        },
-        {
-          name: "south",
-          data: [
-            {
-              x: 1996,
-              y: 162,
-            },
-            {
-              x: 1997,
-              y: 90,
-            },
-            {
-              x: 1998,
-              y: 50,
-            },
-            {
-              x: 1999,
-              y: 77,
-            },
-            {
-              x: 2000,
-              y: 35,
-            },
-            {
-              x: 2001,
-              y: -45,
-            },
-            {
-              x: 2002,
-              y: -88,
-            },
-            {
-              x: 2003,
-              y: -120,
-            },
-            {
-              x: 2004,
-              y: -156,
-            },
-            {
-              x: 2005,
-              y: -123,
-            },
-            {
-              x: 2006,
-              y: -88,
-            },
-            {
-              x: 2007,
-              y: -66,
-            },
-            {
-              x: 2008,
-              y: -45,
-            },
-            {
-              x: 2009,
-              y: -29,
-            },
-            {
-              x: 2010,
-              y: -45,
-            },
-            {
-              x: 2011,
-              y: -88,
-            },
-            {
-              x: 2012,
-              y: -132,
-            },
-            {
-              x: 2013,
-              y: -146,
-            },
-            {
-              x: 2014,
-              y: -169,
-            },
-            {
-              x: 2015,
-              y: -184,
-            },
-          ],
-        },
-      ],
+      series: [{
+        name: 'TEAM A',
+        type: 'area',
+        data: [44, 55, 31, 47, 31, 43, 26, 41, 31, 47, 33]
+      }, {
+        name: 'TEAM B',
+        type: 'line',
+        data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43]
+      }],
       xaxis: {
         type: "datetime",
         categories: [
@@ -192,23 +29,16 @@ const ChartComponent = () => {
       },
       chart: {
         height: 350,
-        type: "line",
+        type: "area",
       },
       dataLabels: {
         enabled: false,
       },
       fill: {
-        type: "gradient",
-        gradient: {
-          shade: "dark",
-          gradientToColors: ["#FDD835"],
-          shadeIntensity: 1,
-          type: "horizontal",
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 100, 100, 100],
-        },
+        type:'solid',
+        opacity: [0.35, 1],
       },
+      labels: ['Dec 01', 'Dec 02','Dec 03','Dec 04','Dec 05','Dec 06','Dec 07','Dec 08','Dec 09 ','Dec 10','Dec 11'],
       markers: {
         size: 5,
       },
@@ -224,13 +54,13 @@ const ChartComponent = () => {
     };
 
     const {
-      id,
       series,
       chart,
       dataLabels,
       xaxis,
       colors,
       fill,
+      labels,
       markers,
       stroke,
       tooltip,
@@ -240,6 +70,7 @@ const ChartComponent = () => {
       series: series,
       chart,
       fill,
+      labels,
       dataLabels,
       xaxis,
       colors,
